@@ -18763,7 +18763,6 @@ const AppleCounter = ()=>{
     function leftclick() {
         leftApple--;
         rightApple++;
-        console.log(rightApple);
     }
     function rightclick() {
         leftApple++;
@@ -18776,7 +18775,7 @@ const AppleCounter = ()=>{
                 basketName: "basket-1"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
@@ -18787,7 +18786,7 @@ const AppleCounter = ()=>{
                 buttonImg: (0, _leftImagePngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 26,
+                lineNumber: 25,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
@@ -18798,7 +18797,7 @@ const AppleCounter = ()=>{
                 buttonImg: (0, _pngTransparentGreenArrowComputerIconsLeftArrowAngleTextRectangleThumbnailPngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 27,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
@@ -18806,13 +18805,13 @@ const AppleCounter = ()=>{
                 basketName: "basket-2"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 28,
+                lineNumber: 27,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/appleCounter.js",
-        lineNumber: 24,
+        lineNumber: 23,
         columnNumber: 9
     }, undefined);
 };

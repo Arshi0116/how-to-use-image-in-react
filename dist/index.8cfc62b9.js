@@ -18757,6 +18757,18 @@ var _appleBasket = require("./AppleBasket");
 var _appleBasketDefault = parcelHelpers.interopDefault(_appleBasket);
 var _appleCounterCss = require("./appleCounter.css");
 const AppleCounter = ()=>{
+    const totalApple = 10;
+    let rightApple = 0;
+    let leftApple = totalApple - rightApple;
+    function leftclick() {
+        leftApple--;
+        rightApple++;
+        console.log(rightApple);
+    }
+    function rightclick() {
+        leftApple++;
+        rightApple--;
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
@@ -18764,21 +18776,29 @@ const AppleCounter = ()=>{
                 basketName: "basket-1"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 11,
+                lineNumber: 25,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                onClick: ()=>{
+                    leftclick();
+                },
+                title: 'left button',
                 buttonImg: (0, _leftImagePngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 12,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                onClick: ()=>{
+                    rightclick();
+                },
+                title: 'right button',
                 buttonImg: (0, _pngTransparentGreenArrowComputerIconsLeftArrowAngleTextRectangleThumbnailPngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 13,
+                lineNumber: 27,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
@@ -18786,13 +18806,13 @@ const AppleCounter = ()=>{
                 basketName: "basket-2"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 14,
+                lineNumber: 28,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/appleCounter.js",
-        lineNumber: 10,
+        lineNumber: 24,
         columnNumber: 9
     }, undefined);
 };
@@ -18939,8 +18959,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Button = (props)=>{
-    const { buttonImg } = props;
+    const { buttonImg, onClick, title } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        title: title,
+        onClick: onClick,
         className: "img",
         src: buttonImg,
         alt: "img"

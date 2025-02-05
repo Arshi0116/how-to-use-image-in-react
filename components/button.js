@@ -1,7 +1,7 @@
 const Button = (props) => {
-    const{buttonImg}=props
+    const{buttonImg, onClick,title}=props
     return (
-    <img className="img" src={buttonImg} alt="img" />
+    <img title={title} onClick={onClick} className="img" src={buttonImg} alt="img" />
 )
 }
 export default Button

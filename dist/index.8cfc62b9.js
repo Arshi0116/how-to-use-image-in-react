@@ -2941,7 +2941,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"6rimH":[function(require,module,exports,__globalThis) {
 var _client = require("react-dom/client");
 const Root = (0, _client.createRoot)(document.querySelector("#root"));
-Root.render("hjugtfh");
+Root.render();
 
 },{"react-dom/client":"lOjBx"}],"lOjBx":[function(require,module,exports,__globalThis) {
 'use strict';

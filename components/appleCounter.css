@@ -1,0 +1,12 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4 rem;
+    align-items: center;
+    justify-items: center;
+}
+ .img{
+    max-width: 100px;
+ }

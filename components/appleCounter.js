@@ -1,32 +1,37 @@
-
+import React from 'react'
 import Button from './button'
 import rightImg from '../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png'
 import leftImg from '../assets/left image.png'
 import AppleBasket from "./AppleBasket"
 import './appleCounter.css'
+import { useState } from 'react'
 
 const AppleCounter = () => {
     const totalApple=10
-    let rightApple=0
-    let leftApple=totalApple-rightApple
+    let [rightApple,setrightApple]=useState(0)
+    let [leftApple,setleftApple]=useState(totalApple-rightApple)
     function leftclick(){
-        leftApple--
-        rightApple++
-        
+        if(rightApple>0){
+            console.log("jisjk");
+            setleftApple(leftApple+1)
+            setrightApple(rightApple-1)
+        }
 
     }
     function rightclick(){
-        leftApple++
-        rightApple--
+        if(leftApple>0){
+            setleftApple(leftApple-1)
+            setrightApple(rightApple+1)
+        }
     }
     return (
         <section>
-            <AppleBasket appleCount={10} basketName='basket-1'/>
+            <AppleBasket appleCount={leftApple} basketName='basket-1'/>
             <Button onClick={()=>{leftclick()}} title={'left button'} buttonImg={leftImg} />
-            <Button onClick={()=>{rightclick()}} title={'right button'} buttonImg={rightImg} />
-            <AppleBasket appleCount={0} basketName='basket-2'/>
+            <Button onClick={()=>{rightclick}} title={'right button'} buttonImg={rightImg} />
+            <AppleBasket appleCount={rightApple} basketName='basket-2'/>
         </section>
-      )
-     }
+    )
+    }
 
 export default AppleCounter

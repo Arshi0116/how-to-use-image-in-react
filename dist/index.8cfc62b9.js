@@ -18747,6 +18747,8 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _button = require("./button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _pngTransparentGreenArrowComputerIconsLeftArrowAngleTextRectangleThumbnailPng = require("../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png");
@@ -18756,26 +18758,33 @@ var _leftImagePngDefault = parcelHelpers.interopDefault(_leftImagePng);
 var _appleBasket = require("./AppleBasket");
 var _appleBasketDefault = parcelHelpers.interopDefault(_appleBasket);
 var _appleCounterCss = require("./appleCounter.css");
+var _s = $RefreshSig$();
 const AppleCounter = ()=>{
+    _s();
     const totalApple = 10;
-    let rightApple = 0;
-    let leftApple = totalApple - rightApple;
+    let [rightApple, setrightApple] = (0, _react.useState)(0);
+    let [leftApple, setleftApple] = (0, _react.useState)(totalApple - rightApple);
     function leftclick() {
-        leftApple--;
-        rightApple++;
+        if (rightApple > 0) {
+            console.log("jisjk");
+            setleftApple(leftApple + 1);
+            setrightApple(rightApple - 1);
+        }
     }
     function rightclick() {
-        leftApple++;
-        rightApple--;
+        if (leftApple > 0) {
+            setleftApple(leftApple - 1);
+            setrightApple(rightApple + 1);
+        }
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
-                appleCount: 10,
+                appleCount: leftApple,
                 basketName: "basket-1"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 24,
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
@@ -18786,35 +18795,36 @@ const AppleCounter = ()=>{
                 buttonImg: (0, _leftImagePngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 25,
+                lineNumber: 30,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
                 onClick: ()=>{
-                    rightclick();
+                    rightclick;
                 },
                 title: 'right button',
                 buttonImg: (0, _pngTransparentGreenArrowComputerIconsLeftArrowAngleTextRectangleThumbnailPngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 26,
+                lineNumber: 31,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
-                appleCount: 0,
+                appleCount: rightApple,
                 basketName: "basket-2"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 27,
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/appleCounter.js",
-        lineNumber: 23,
+        lineNumber: 28,
         columnNumber: 9
     }, undefined);
 };
+_s(AppleCounter, "bd/GpNVG7iaexSz50gBKMz2XA84=");
 _c = AppleCounter;
 exports.default = AppleCounter;
 var _c;
@@ -18825,7 +18835,7 @@ $RefreshReg$(_c, "AppleCounter");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./AppleBasket":"48VFy","../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png":"cC578","../assets/left image.png":"aXfWz","./appleCounter.css":"i87Jo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./button":"96YNp"}],"48VFy":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./AppleBasket":"48VFy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png":"cC578","../assets/left image.png":"aXfWz","./button":"96YNp","./appleCounter.css":"i87Jo"}],"48VFy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$95b8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18947,7 +18957,7 @@ exports.getOrigin = getOrigin;
 },{}],"aXfWz":[function(require,module,exports,__globalThis) {
 module.exports = require("c3aca375ea1301fd").getBundleURL('fqV6O') + "left image.9abd3294.png" + "?" + Date.now();
 
-},{"c3aca375ea1301fd":"lgJ39"}],"i87Jo":[function() {},{}],"96YNp":[function(require,module,exports,__globalThis) {
+},{"c3aca375ea1301fd":"lgJ39"}],"96YNp":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$aea7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18981,6 +18991,6 @@ $RefreshReg$(_c, "Button");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","eq8kL","6rimH"], "6rimH", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i87Jo":[function() {},{}]},["aQL8O","eq8kL","6rimH"], "6rimH", "parcelRequire94c2")
 
 //# sourceMappingURL=index.8cfc62b9.js.map

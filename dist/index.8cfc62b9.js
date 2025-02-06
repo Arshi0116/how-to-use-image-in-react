@@ -18764,19 +18764,18 @@ const AppleCounter = ()=>{
     const totalApple = 10;
     let [rightApple, setrightApple] = (0, _react.useState)(0);
     let [leftApple, setleftApple] = (0, _react.useState)(totalApple - rightApple);
-    function leftclick() {
+    const leftclick = ()=>{
         if (rightApple > 0) {
-            console.log("jisjk");
-            setleftApple(leftApple + 1);
             setrightApple(rightApple - 1);
+            setleftApple(leftApple + 1);
         }
-    }
-    function rightclick() {
+    };
+    const rightclick = ()=>{
         if (leftApple > 0) {
             setleftApple(leftApple - 1);
             setrightApple(rightApple + 1);
         }
-    }
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
@@ -18784,29 +18783,25 @@ const AppleCounter = ()=>{
                 basketName: "basket-1"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 29,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                onClick: ()=>{
-                    leftclick();
-                },
-                title: 'left button',
-                buttonImg: (0, _leftImagePngDefault.default)
-            }, void 0, false, {
-                fileName: "components/appleCounter.js",
                 lineNumber: 30,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                onClick: ()=>{
-                    rightclick;
-                },
-                title: 'right button',
+                onClick: leftclick,
+                title: 'left button',
                 buttonImg: (0, _pngTransparentGreenArrowComputerIconsLeftArrowAngleTextRectangleThumbnailPngDefault.default)
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
                 lineNumber: 31,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                onClick: rightclick,
+                title: 'right button',
+                buttonImg: (0, _leftImagePngDefault.default)
+            }, void 0, false, {
+                fileName: "components/appleCounter.js",
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleBasketDefault.default), {
@@ -18814,13 +18809,13 @@ const AppleCounter = ()=>{
                 basketName: "basket-2"
             }, void 0, false, {
                 fileName: "components/appleCounter.js",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/appleCounter.js",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 9
     }, undefined);
 };
@@ -18835,7 +18830,7 @@ $RefreshReg$(_c, "AppleCounter");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./AppleBasket":"48VFy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png":"cC578","../assets/left image.png":"aXfWz","./button":"96YNp","./appleCounter.css":"i87Jo"}],"48VFy":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./AppleBasket":"48VFy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/left image.png":"aXfWz","../assets/png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.png":"cC578","./button":"96YNp","./appleCounter.css":"i87Jo"}],"48VFy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$95b8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18916,10 +18911,10 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"cC578":[function(require,module,exports,__globalThis) {
-module.exports = require("e1aec8bb7a14028e").getBundleURL('fqV6O') + "png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.27b40dc4.png" + "?" + Date.now();
+},{}],"aXfWz":[function(require,module,exports,__globalThis) {
+module.exports = require("c3aca375ea1301fd").getBundleURL('fqV6O') + "left image.9abd3294.png" + "?" + Date.now();
 
-},{"e1aec8bb7a14028e":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+},{"c3aca375ea1301fd":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -18954,10 +18949,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"aXfWz":[function(require,module,exports,__globalThis) {
-module.exports = require("c3aca375ea1301fd").getBundleURL('fqV6O') + "left image.9abd3294.png" + "?" + Date.now();
+},{}],"cC578":[function(require,module,exports,__globalThis) {
+module.exports = require("e1aec8bb7a14028e").getBundleURL('fqV6O') + "png-transparent-green-arrow-computer-icons-left-arrow-angle-text-rectangle-thumbnail.27b40dc4.png" + "?" + Date.now();
 
-},{"c3aca375ea1301fd":"lgJ39"}],"96YNp":[function(require,module,exports,__globalThis) {
+},{"e1aec8bb7a14028e":"lgJ39"}],"96YNp":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$aea7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

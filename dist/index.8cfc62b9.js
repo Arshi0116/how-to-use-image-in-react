@@ -18714,14 +18714,23 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _appleCounter = require("./components/appleCounter");
 var _appleCounterDefault = parcelHelpers.interopDefault(_appleCounter);
+var _useState = require("./UseState");
+var _useStateDefault = parcelHelpers.interopDefault(_useState);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleCounterDefault.default), {}, void 0, false, {
-            fileName: "app.js",
-            lineNumber: 6,
-            columnNumber: 11
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _useStateDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 6,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appleCounterDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 7,
+                columnNumber: 11
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "app.js",
         lineNumber: 5,
         columnNumber: 9
@@ -18737,7 +18746,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./components/appleCounter":"3ZAum","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3ZAum":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./components/appleCounter":"3ZAum","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./UseState":"6M5Wx"}],"3ZAum":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$adf9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18986,6 +18995,58 @@ $RefreshReg$(_c, "Button");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i87Jo":[function() {},{}]},["aQL8O","eq8kL","6rimH"], "6rimH", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i87Jo":[function() {},{}],"6M5Wx":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3830 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3830.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _appleCounterCss = require("./components/appleCounter.css");
+var _s = $RefreshSig$();
+const UseState = ()=>{
+    _s();
+    const [count, setCount] = (0, _react.useState)(0);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "usestate",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: count
+            }, void 0, false, {
+                fileName: "UseState.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setCount(count + 1),
+                children: "Click me for increasing number"
+            }, void 0, false, {
+                fileName: "UseState.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "UseState.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_s(UseState, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
+_c = UseState;
+exports.default = UseState;
+var _c;
+$RefreshReg$(_c, "UseState");
+
+  $parcel$ReactRefreshHelpers$3830.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/appleCounter.css":"i87Jo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i87Jo":[function() {},{}]},["aQL8O","eq8kL","6rimH"], "6rimH", "parcelRequire94c2")
 
 //# sourceMappingURL=index.8cfc62b9.js.map

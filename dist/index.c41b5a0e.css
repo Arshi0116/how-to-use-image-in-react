@@ -1,13 +1,21 @@
 section {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 4 rem;
   justify-content: space-between;
   place-items: center;
+  max-width: 1000px;
+  margin: 100px auto 0;
   display: flex;
 }
 
 .img {
   max-width: 100px;
+}
+
+.usestate {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */

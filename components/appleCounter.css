@@ -1,12 +1,21 @@
 section{
+   
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 4 rem;
+    margin-top: 100px;
     align-items: center;
     justify-items: center;
 }
  .img{
     max-width: 100px;
+ }
+ .usestate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
  }
